@@ -29,7 +29,7 @@ export const turnDialWithZeroesCrossingCount = (current: number, distance: numbe
     const isStartingAtZero = current === 0;
     const zeroesCrossed = clockwise
         ? Math.floor((current + distance) / size)
-        : distance <= current
+        : distance < current
             ? 0
             : (isStartingAtZero ? 0 : 1) + Math.floor((distance - current) / size);
     
