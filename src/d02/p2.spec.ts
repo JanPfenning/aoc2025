@@ -27,7 +27,7 @@ describe("day 2", () => {
             const input = parseRanges(rawInput);
             const invalidIdRanges = findInvalidIdsInRanges(input)
             const result = invalidIdRanges.map(x => +x).reduce((a,b) => a + b, 0);
-            expect(result).toEqual(1)
+            expect(result).toEqual(69553832684)
         })
     })
 })
